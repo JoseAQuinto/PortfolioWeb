@@ -1,0 +1,6 @@
+Guarda aquí el currículum real con el nombre cv.pdf.
+
+Los botones de descarga del portfolio ya apuntan a:
+assets/documents/cv.pdf
+
+Antes de publicar, revisa que el PDF no incluya datos personales que no quieras hacer públicos.

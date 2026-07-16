@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" role="img" aria-labelledby="title">
+  <title id="title">Event management education placeholder</title>
+  <rect width="700" height="760" fill="#dccdbd"/><rect x="46" y="48" width="608" height="664" fill="#f3ece2"/>
+  <path d="M120 568h460M150 568V318h400v250M207 318v-86h286v86" fill="none" stroke="#173c35" stroke-width="10"/>
+  <path d="M166 406h368M166 482h368" stroke="#b58a72" stroke-width="5"/>
+  <g fill="#7b263b"><circle cx="203" cy="404" r="24"/><circle cx="314" cy="404" r="24"/><circle cx="425" cy="404" r="24"/><circle cx="498" cy="480" r="24"/><circle cx="369" cy="480" r="24"/><circle cx="240" cy="480" r="24"/></g>
+  <text x="350" y="659" text-anchor="middle" fill="#6f6963" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">ADD YOUR OWN IMAGE</text>
+</svg>
