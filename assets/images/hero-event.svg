@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 860" role="img" aria-labelledby="title desc">
+  <title id="title">Professional portrait placeholder</title><desc id="desc">Editorial event setting with arch, flowers and a portrait silhouette.</desc>
+  <rect width="720" height="860" fill="#d9cabc"/><rect x="44" y="44" width="632" height="772" fill="#e9dfd3"/>
+  <path d="M147 780V341c0-151 95-245 213-245s213 94 213 245v439" fill="#f7f1e9"/>
+  <path d="M451 780c-6-145-34-239-91-239s-85 94-91 239" fill="#6d2638"/>
+  <circle cx="360" cy="418" r="76" fill="#b77a68"/><path d="M292 412c2-94 37-131 91-116 44 12 58 57 43 121-16-40-66-58-134-5Z" fill="#3a2e2b"/>
+  <path d="M93 704c35-90 73-151 111-183M110 650c48 8 81 29 99 63M610 724c-32-92-67-155-108-191M598 655c-46 9-77 31-97 66" fill="none" stroke="#526f5d" stroke-width="8"/>
+  <g fill="#8b3145"><circle cx="146" cy="597" r="19"/><circle cx="177" cy="557" r="15"/><circle cx="567" cy="590" r="18"/><circle cx="541" cy="550" r="14"/></g>
+  <text x="360" y="805" text-anchor="middle" fill="#796b62" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">REPLACE WITH YOUR PORTRAIT</text>
+</svg>
