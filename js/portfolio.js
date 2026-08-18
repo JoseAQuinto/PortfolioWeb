@@ -251,10 +251,20 @@ if (useCursorAura) {
     }
     targetCursorX = event.clientX;
     targetCursorY = event.clientY;
-    if (!cursorAnimationFrame) cursorAnimationFrame = requestAnimationFrame(renderCursorPosition);
-    cursorAura.classList.add("is-visible");
     const target = event.target.closest?.("a, button, input, textarea, select");
-    cursorAura.classList.toggle("is-action", Boolean(target) && !target.matches("input, textarea, select"));
+    const isAction = Boolean(target) && !target.matches("input, textarea, select");
+    if (isAction) {
+      if (cursorAnimationFrame) cancelAnimationFrame(cursorAnimationFrame);
+      cursorAnimationFrame = 0;
+      cursorX = targetCursorX;
+      cursorY = targetCursorY;
+      cursorAura.style.left = `${cursorX}px`;
+      cursorAura.style.top = `${cursorY}px`;
+    } else if (!cursorAnimationFrame) {
+      cursorAnimationFrame = requestAnimationFrame(renderCursorPosition);
+    }
+    cursorAura.classList.add("is-visible");
+    cursorAura.classList.toggle("is-action", isAction);
     cursorAura.classList.toggle("is-project", Boolean(target?.classList.contains("project-open")));
     cursorAura.classList.toggle("is-hidden", Boolean(target?.matches("input, textarea, select")));
   }, { passive: true });
