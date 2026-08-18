@@ -5,9 +5,9 @@
 */
 
 const skillTranslationKeys = [
-  "skillEventPlanning", "skillEventCoordination", "skillLogistics", "skillVendor", "skillBudget", "skillTime",
-  "skillGuest", "skillCommunication", "skillTeamwork", "skillProblem", "skillIntercultural", "skillHospitality",
-  "skillCreativity", "skillDetail", "skillOffice", "skillSocial", "skillCanva", "skillPresentation"
+  "skillEventCoordination", "skillTravel", "skillVendor", "skillBudgets", "skillTimelines", "skillDiary",
+  "skillClient", "skillGuest", "skillHospitality", "skillCustomer", "skillProblem", "skillIntercultural",
+  "skillCanva", "skillIllustrator", "skillInDesign", "skillPhotoshop", "skillSocial", "skillGoogle"
 ];
 
 document.querySelectorAll(".skill-group li").forEach((item, index) => {
@@ -25,6 +25,6 @@ window.addEventListener("resize", syncMobileNavigationAccessibility);
 syncMobileNavigationAccessibility();
 
 const portfolioScript = document.createElement("script");
-portfolioScript.src = "js/portfolio.js";
+portfolioScript.src = "js/portfolio.js?v=20260818";
 portfolioScript.async = false;
 document.head.appendChild(portfolioScript);
