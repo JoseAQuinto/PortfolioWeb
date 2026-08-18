@@ -229,6 +229,7 @@ if (useCursorAura) {
   document.addEventListener("pointermove", (event) => {
     cursorAura.style.left = `${event.clientX}px`;
     cursorAura.style.top = `${event.clientY}px`;
+    cursorAura.classList.add("is-visible");
     const target = event.target.closest?.("a, button, input, textarea, select");
     cursorAura.classList.toggle("is-action", Boolean(target) && !target.matches("input, textarea, select"));
     cursorAura.classList.toggle("is-project", Boolean(target?.classList.contains("project-open")));
@@ -236,7 +237,7 @@ if (useCursorAura) {
   }, { passive: true });
   document.addEventListener("pointerdown", () => cursorAura.classList.add("is-pressed"));
   document.addEventListener("pointerup", () => cursorAura.classList.remove("is-pressed"));
-  const hideCursorAccent = () => cursorAura.classList.remove("is-action", "is-project", "is-pressed");
+  const hideCursorAccent = () => cursorAura.classList.remove("is-visible", "is-action", "is-project", "is-pressed");
   document.documentElement.addEventListener("mouseleave", hideCursorAccent);
   window.addEventListener("blur", hideCursorAccent);
 }

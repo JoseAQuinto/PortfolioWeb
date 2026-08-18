@@ -287,15 +287,18 @@ h3 { line-height: 1.25; }
 
 .cursor-aura { display: none; }
 @media (pointer: fine) {
-  html.cursor-enhanced .cursor-aura { position: fixed; z-index: 2147483647; display: flex; width: 14px; height: 14px; align-items: center; opacity: 0; color: var(--wine); pointer-events: none; transform: translate(13px, 11px); transform-origin: left center; transition: width .25s cubic-bezier(.22,1,.36,1), opacity .16s ease, transform .12s ease; }
-  html.cursor-enhanced .cursor-aura::before, html.cursor-enhanced .cursor-aura::after { position: absolute; content: ""; top: 50%; left: 7px; background: var(--coral); transform: translate(-50%, -50%) rotate(45deg); }
-  html.cursor-enhanced .cursor-aura::before { width: 11px; height: 1px; }
-  html.cursor-enhanced .cursor-aura::after { width: 1px; height: 11px; }
-  html.cursor-enhanced .cursor-aura.is-action { opacity: 1; }
-  html.cursor-enhanced .cursor-aura.is-project { width: 58px; }
+  html.cursor-enhanced .cursor-aura { position: fixed; z-index: 2147483647; display: flex; width: 16px; height: 12px; align-items: center; border: 1px solid transparent; opacity: 0; color: transparent; pointer-events: none; transform: translate(11px, 9px); transform-origin: center; transition: width .24s cubic-bezier(.22,1,.36,1), height .24s cubic-bezier(.22,1,.36,1), border-color .2s ease, border-radius .24s ease, background .2s ease, color .2s ease, opacity .14s ease, transform .14s ease; }
+  html.cursor-enhanced .cursor-aura::before, html.cursor-enhanced .cursor-aura::after { position: absolute; content: ""; transition: opacity .12s ease, transform .2s ease; }
+  html.cursor-enhanced .cursor-aura::before { top: 3px; left: 1px; width: 6px; height: 6px; background: var(--wine); transform: rotate(45deg); }
+  html.cursor-enhanced .cursor-aura::after { top: 6px; left: 8px; width: 8px; height: 1px; background: var(--coral); transform: rotate(-12deg); }
+  html.cursor-enhanced .cursor-aura.is-visible { opacity: 1; }
+  html.cursor-enhanced .cursor-aura.is-action { width: 44px; height: 44px; border-color: var(--coral); border-radius: 50%; background: rgba(216,101,67,.08); transform: translate(-50%, -50%); }
+  html.cursor-enhanced .cursor-aura.is-action::before, html.cursor-enhanced .cursor-aura.is-action::after { opacity: 0; transform: scale(.2); }
+  html.cursor-enhanced .cursor-aura.is-project { width: 64px; height: 64px; border-color: var(--wine); background: var(--wine); color: #fff; }
   html.cursor-enhanced .cursor-aura.is-hidden { opacity: 0; }
-  html.cursor-enhanced .cursor-aura.is-pressed { transform: translate(13px, 11px) scale(.86); }
-  .cursor-aura span { margin-left: 18px; opacity: 0; font-size: .52rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; transition: opacity .16s ease; }
+  html.cursor-enhanced .cursor-aura.is-pressed:not(.is-action) { transform: translate(11px, 9px) scale(.8); }
+  html.cursor-enhanced .cursor-aura.is-action.is-pressed { transform: translate(-50%, -50%) scale(.9); }
+  .cursor-aura span { width: 100%; opacity: 0; font-size: .52rem; font-weight: 600; letter-spacing: .1em; text-align: center; text-transform: uppercase; transition: opacity .16s ease; }
   .cursor-aura.is-project span { opacity: 1; }
 }
 

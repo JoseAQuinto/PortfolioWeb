@@ -25,6 +25,6 @@ window.addEventListener("resize", syncMobileNavigationAccessibility);
 syncMobileNavigationAccessibility();
 
 const portfolioScript = document.createElement("script");
-portfolioScript.src = "js/portfolio.js?v=20260818-6";
+portfolioScript.src = "js/portfolio.js?v=20260818-7";
 portfolioScript.async = false;
 document.head.appendChild(portfolioScript);
