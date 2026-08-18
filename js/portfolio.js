@@ -11,7 +11,7 @@ const translations = {
     languagesEyebrow: "06 · Languages", languagesTitle: "Clear communication,<br><em>across cultures.</em>", languagesBody: "International experience has made English a natural working language, alongside native Spanish and conversational Valencian/Catalan.", english: "English", englishDetail: "Fluent · Professional working proficiency", spanishLanguage: "Spanish", native: "Native language", nativeShort: "Native", valencian: "Valencian / Catalan", intermediate: "Intermediate proficiency", intermediateShort: "Intermediate",
     valuesEyebrow: "How I work", value1: "Detail-led", value2: "Calm under pressure", value3: "Client-focused", value4: "Resourceful", value5: "Culturally aware", value6: "Reliable",
     contactEyebrow: "07 · Contact", contactTitle: "Have a role, a brief<br><em>or an idea?</em>", contactIntro: "I am open to opportunities in event coordination, client support, hospitality and international operations.", email: "Email", ukPhone: "UK phone", spainPhone: "Spain phone", location: "Based in", formName: "Name", formNamePlaceholder: "Your name", formEmail: "Email", formCompany: "Company", formCompanyPlaceholder: "Company or organisation", formMessage: "Message", formMessagePlaceholder: "Tell me about the role or project", sendMessage: "Send message", formRequired: "Please complete this field.", formEmailInvalid: "Enter a valid email address.", formOpeningEmail: "Your email app is opening. If it does not, write to carolinaceeg@gmail.com.",
-    rights: "All rights reserved.", backTop: "Back to top", modalObjective: "The brief", modalRole: "My contribution", modalScope: "Scope", modalOutcome: "Deliverable", viewFullProject: "View full project", closeModal: "Close project details"
+    rights: "All rights reserved.", backTop: "Back to top", modalFingerprint: "Creative fingerprint", modalPalette: "Palette", modalDirection: "Visual direction", modalDecision: "Design decision", modalObjective: "The brief", modalRole: "My contribution", modalScope: "Scope", modalOutcome: "Deliverable", viewFullProject: "View full project", closeModal: "Close project details", cursorView: "View"
   },
   es: {
     skip: "Saltar al contenido", menu: "Abrir menú", navAbout: "Sobre mí", navExperience: "Experiencia", navProjects: "Proyectos", navSkills: "Competencias", navContact: "Contacto", downloadCv: "Descargar CV",
@@ -25,7 +25,7 @@ const translations = {
     languagesEyebrow: "06 · Idiomas", languagesTitle: "Comunicación clara,<br><em>entre culturas.</em>", languagesBody: "La experiencia internacional ha convertido el inglés en un idioma de trabajo natural, junto con el español nativo y el valenciano/catalán conversacional.", english: "Inglés", englishDetail: "Fluido · Competencia profesional", spanishLanguage: "Español", native: "Lengua materna", nativeShort: "Nativo", valencian: "Valenciano / Catalán", intermediate: "Competencia intermedia", intermediateShort: "Intermedio",
     valuesEyebrow: "Cómo trabajo", value1: "Atenta al detalle", value2: "Serena bajo presión", value3: "Centrada en el cliente", value4: "Resolutiva", value5: "Con sensibilidad cultural", value6: "Fiable",
     contactEyebrow: "07 · Contacto", contactTitle: "¿Tienes un puesto, un briefing<br><em>o una idea?</em>", contactIntro: "Estoy abierta a oportunidades en coordinación de eventos, atención al cliente, hospitality y operaciones internacionales.", email: "Correo", ukPhone: "Teléfono UK", spainPhone: "Teléfono España", location: "Ubicación", formName: "Nombre", formNamePlaceholder: "Tu nombre", formEmail: "Correo", formCompany: "Empresa", formCompanyPlaceholder: "Empresa u organización", formMessage: "Mensaje", formMessagePlaceholder: "Cuéntame sobre el puesto o proyecto", sendMessage: "Enviar mensaje", formRequired: "Completa este campo.", formEmailInvalid: "Introduce un correo válido.", formOpeningEmail: "Se está abriendo tu aplicación de correo. Si no lo hace, escribe a carolinaceeg@gmail.com.",
-    rights: "Todos los derechos reservados.", backTop: "Volver arriba", modalObjective: "El encargo", modalRole: "Mi aportación", modalScope: "Alcance", modalOutcome: "Entregable", viewFullProject: "Ver proyecto completo", closeModal: "Cerrar detalles del proyecto"
+    rights: "Todos los derechos reservados.", backTop: "Volver arriba", modalFingerprint: "Huella creativa", modalPalette: "Paleta", modalDirection: "Dirección visual", modalDecision: "Decisión de diseño", modalObjective: "El encargo", modalRole: "Mi aportación", modalScope: "Alcance", modalOutcome: "Entregable", viewFullProject: "Ver proyecto completo", closeModal: "Cerrar detalles del proyecto", cursorView: "Ver"
   }
 };
 
@@ -48,6 +48,33 @@ const projectData = {
   }
 };
 
+const projectCreativeData = {
+  visuals: {
+    portimao: { code: "CG / 01", palette: ["#167d8d", "#dce9ed", "#f3a267", "#fff8f1"] },
+    bridal: { code: "CG / 02", palette: ["#1b1718", "#df2375", "#eedde2", "#fffaf5"] },
+    camila: { code: "CG / 03", palette: ["#82957a", "#efe4cd", "#c29a55", "#fffaf5"] },
+    carlos: { code: "CG / 04", palette: ["#487ca4", "#dce9ed", "#f5dcae", "#fffaf5"] },
+    christmas: { code: "CG / 05", palette: ["#315d4d", "#c9453d", "#dce7dd", "#fff5df"] },
+    diselo: { code: "CG / 06", palette: ["#8b2448", "#d86543", "#efe0dc", "#fffaf5"] }
+  },
+  en: {
+    portimao: { keywords: ["Structured", "Coastal", "Effortless"], direction: "Editorial travel planning", decision: "A clear visual rhythm separates practical information from the emotional promise of the trip." },
+    bridal: { keywords: ["Bold", "Playful", "Editorial"], direction: "High-contrast celebration", decision: "A vivid pink accent turns a monochrome portrait into an immediate, personality-led invitation." },
+    camila: { keywords: ["Botanical", "Warm", "Delicate"], direction: "Soft ceremonial stationery", decision: "Decoration is held around the edges so the event information remains calm and easy to read." },
+    carlos: { keywords: ["Light", "Personal", "Friendly"], direction: "Illustrated family stationery", decision: "The central character creates warmth while the blue hierarchy keeps every practical detail clear." },
+    christmas: { keywords: ["Cheerful", "Bilingual", "Seasonal"], direction: "Playful product design", decision: "The bilingual message becomes part of the illustration so learning and decoration feel like one idea." },
+    diselo: { keywords: ["Expressive", "Warm", "Handmade"], direction: "Approachable creative identity", decision: "An editorial wordmark is softened with a warm palette to balance craft, personality and recognition." }
+  },
+  es: {
+    portimao: { keywords: ["Estructurado", "Costero", "Fluido"], direction: "Planificación de viaje editorial", decision: "Un ritmo visual claro separa la información práctica de la promesa emocional del viaje." },
+    bridal: { keywords: ["Atrevido", "Divertido", "Editorial"], direction: "Celebración de alto contraste", decision: "El acento rosa convierte un retrato monocromo en una invitación inmediata y llena de personalidad." },
+    camila: { keywords: ["Botánico", "Cálido", "Delicado"], direction: "Papelería ceremonial suave", decision: "La decoración se concentra en los márgenes para mantener la información serena y fácil de leer." },
+    carlos: { keywords: ["Ligero", "Personal", "Cercano"], direction: "Papelería familiar ilustrada", decision: "El personaje central aporta calidez y la jerarquía azul conserva claros todos los datos prácticos." },
+    christmas: { keywords: ["Alegre", "Bilingüe", "Festivo"], direction: "Diseño de producto lúdico", decision: "El mensaje bilingüe forma parte de la ilustración para unir aprendizaje y decoración en una sola idea." },
+    diselo: { keywords: ["Expresivo", "Cálido", "Artesanal"], direction: "Identidad creativa cercana", decision: "El logotipo editorial se suaviza con una paleta cálida para equilibrar oficio, personalidad y reconocimiento." }
+  }
+};
+
 const root = document.documentElement;
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-toggle");
@@ -56,9 +83,43 @@ const languageButtons = document.querySelectorAll(".language-button");
 const modal = document.querySelector("#project-modal");
 const modalClose = modal.querySelector(".modal-close");
 const contactForm = document.querySelector(".contact-form");
+const cursorAura = document.querySelector(".cursor-aura");
 let currentLanguage = "en";
 let currentProject = "portimao";
 let lastFocusedElement = null;
+
+function renderPalette(container, colors, accessible = true) {
+  container.replaceChildren();
+  colors.forEach((color) => {
+    const swatch = document.createElement("span");
+    swatch.style.backgroundColor = color;
+    if (accessible) {
+      swatch.setAttribute("role", "listitem");
+      swatch.setAttribute("aria-label", color);
+      swatch.title = color;
+    }
+    container.appendChild(swatch);
+  });
+}
+
+function renderProjectFingerprints(language) {
+  document.querySelectorAll(".project-card").forEach((card) => {
+    const visual = projectCreativeData.visuals[card.dataset.project];
+    const creative = projectCreativeData[language][card.dataset.project];
+    if (!visual || !creative) return;
+
+    let fingerprint = card.querySelector(".project-fingerprint-mini");
+    if (!fingerprint) {
+      fingerprint = document.createElement("div");
+      fingerprint.className = "project-fingerprint-mini";
+      fingerprint.innerHTML = '<span class="mini-code"></span><span class="mini-palette" aria-hidden="true"></span><span class="mini-keywords"></span>';
+      card.querySelector(".project-open").before(fingerprint);
+    }
+    fingerprint.querySelector(".mini-code").textContent = visual.code;
+    fingerprint.querySelector(".mini-keywords").textContent = creative.keywords.join(" · ");
+    renderPalette(fingerprint.querySelector(".mini-palette"), visual.palette, false);
+  });
+}
 
 function setLanguage(language) {
   if (!translations[language]) return;
@@ -83,6 +144,8 @@ function setLanguage(language) {
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
   });
+  cursorAura.querySelector("span").textContent = translations[language].cursorView;
+  renderProjectFingerprints(language);
   if (modal.open) fillModal(currentProject);
   try { localStorage.setItem("portfolio-language", language); } catch (_) { /* Storage may be unavailable in privacy modes. */ }
 }
@@ -104,7 +167,9 @@ languageButtons.forEach((button) => button.addEventListener("click", () => setLa
 
 function fillModal(projectId) {
   const project = projectData[currentLanguage][projectId];
-  if (!project) return;
+  const visual = projectCreativeData.visuals[projectId];
+  const creative = projectCreativeData[currentLanguage][projectId];
+  if (!project || !visual || !creative) return;
   currentProject = projectId;
   modal.querySelector("#modal-type").textContent = project.type;
   modal.querySelector("#modal-title").textContent = project.title;
@@ -116,6 +181,16 @@ function fillModal(projectId) {
   modal.querySelector("#modal-image").src = project.image;
   modal.querySelector("#modal-image").alt = project.title;
   modal.querySelector("#modal-link").href = project.link;
+  modal.querySelector("#modal-code").textContent = visual.code;
+  modal.querySelector("#modal-direction").textContent = creative.direction;
+  modal.querySelector("#modal-decision").textContent = creative.decision;
+  const keywords = modal.querySelector("#modal-keywords");
+  keywords.replaceChildren(...creative.keywords.map((keyword) => {
+    const element = document.createElement("span");
+    element.textContent = keyword;
+    return element;
+  }));
+  renderPalette(modal.querySelector("#modal-palette"), visual.palette);
 }
 
 document.querySelectorAll(".project-card").forEach((card) => {
@@ -123,6 +198,7 @@ document.querySelectorAll(".project-card").forEach((card) => {
     lastFocusedElement = document.activeElement;
     fillModal(card.dataset.project);
     modal.showModal();
+    modal.appendChild(cursorAura);
     document.body.classList.add("modal-open");
     modalClose.focus();
   });
@@ -140,9 +216,31 @@ modal.addEventListener("click", (event) => {
   const outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
   if (outside) closeModal();
 });
-modal.addEventListener("close", () => document.body.classList.remove("modal-open"));
+modal.addEventListener("close", () => {
+  document.body.classList.remove("modal-open");
+  document.body.appendChild(cursorAura);
+});
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const useCursorAura = !reduceMotion && window.matchMedia("(pointer: fine)").matches;
+
+if (useCursorAura) {
+  root.classList.add("cursor-enhanced");
+  document.addEventListener("pointermove", (event) => {
+    cursorAura.style.left = `${event.clientX}px`;
+    cursorAura.style.top = `${event.clientY}px`;
+    cursorAura.classList.add("is-visible");
+    const target = event.target.closest?.("a, button, input, textarea, select");
+    cursorAura.classList.toggle("is-action", Boolean(target) && !target.matches("input, textarea, select"));
+    cursorAura.classList.toggle("is-project", Boolean(target?.classList.contains("project-open")));
+    cursorAura.classList.toggle("is-hidden", Boolean(target?.matches("input, textarea, select")));
+  }, { passive: true });
+  document.addEventListener("pointerdown", () => cursorAura.classList.add("is-pressed"));
+  document.addEventListener("pointerup", () => cursorAura.classList.remove("is-pressed"));
+  document.documentElement.addEventListener("mouseleave", () => cursorAura.classList.remove("is-visible"));
+  window.addEventListener("blur", () => cursorAura.classList.remove("is-visible"));
+}
+
 const revealElements = document.querySelectorAll(".reveal");
 revealElements.forEach((element) => element.style.setProperty("--delay", `${element.dataset.delay || 0}ms`));
 if (reduceMotion || !("IntersectionObserver" in window)) {
