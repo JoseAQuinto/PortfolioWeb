@@ -160,47 +160,6 @@ requestAnimationFrame(() => {
   document.querySelectorAll(".hero .reveal").forEach((element) => element.classList.add("is-visible"));
 });
 
-const heroSection = document.querySelector(".hero");
-const finePointer = window.matchMedia("(pointer: fine)").matches;
-let heroAnimationFrame = 0;
-
-function resetHeroDepth() {
-  heroSection.style.setProperty("--pointer-x", "50%");
-  heroSection.style.setProperty("--pointer-y", "45%");
-  heroSection.style.setProperty("--tilt-x", "0deg");
-  heroSection.style.setProperty("--tilt-y", "0deg");
-  heroSection.style.setProperty("--shift-x", "0px");
-  heroSection.style.setProperty("--shift-y", "0px");
-  heroSection.style.setProperty("--shift-x-inverse", "0px");
-  heroSection.style.setProperty("--shift-y-inverse", "0px");
-  heroSection.style.setProperty("--shadow-x", "0px");
-  heroSection.style.setProperty("--shadow-y", "8px");
-}
-
-if (!reduceMotion && finePointer) {
-  heroSection.addEventListener("pointermove", (event) => {
-    const bounds = heroSection.getBoundingClientRect();
-    const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
-    const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
-    cancelAnimationFrame(heroAnimationFrame);
-    heroAnimationFrame = requestAnimationFrame(() => {
-      const horizontal = x - .5;
-      const vertical = y - .5;
-      heroSection.style.setProperty("--pointer-x", `${x * 100}%`);
-      heroSection.style.setProperty("--pointer-y", `${y * 100}%`);
-      heroSection.style.setProperty("--tilt-x", `${vertical * -5}deg`);
-      heroSection.style.setProperty("--tilt-y", `${horizontal * 7}deg`);
-      heroSection.style.setProperty("--shift-x", `${horizontal * 18}px`);
-      heroSection.style.setProperty("--shift-y", `${vertical * 14}px`);
-      heroSection.style.setProperty("--shift-x-inverse", `${horizontal * -14}px`);
-      heroSection.style.setProperty("--shift-y-inverse", `${vertical * -10}px`);
-      heroSection.style.setProperty("--shadow-x", `${horizontal * 7}px`);
-      heroSection.style.setProperty("--shadow-y", `${8 + vertical * 6}px`);
-    });
-  });
-  heroSection.addEventListener("pointerleave", resetHeroDepth);
-}
-
 const sectionLinks = [...document.querySelectorAll(".nav-links a")];
 const observedSections = sectionLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
 function updateActiveSection() {
