@@ -226,9 +226,32 @@ const useCursorAura = !reduceMotion && window.matchMedia("(pointer: fine)").matc
 
 if (useCursorAura) {
   root.classList.add("cursor-enhanced");
+  let cursorX = -100;
+  let cursorY = -100;
+  let targetCursorX = -100;
+  let targetCursorY = -100;
+  let cursorAnimationFrame = 0;
+
+  function renderCursorPosition() {
+    cursorX += (targetCursorX - cursorX) * .34;
+    cursorY += (targetCursorY - cursorY) * .34;
+    cursorAura.style.left = `${cursorX}px`;
+    cursorAura.style.top = `${cursorY}px`;
+    if (Math.abs(targetCursorX - cursorX) > .1 || Math.abs(targetCursorY - cursorY) > .1) {
+      cursorAnimationFrame = requestAnimationFrame(renderCursorPosition);
+    } else {
+      cursorAnimationFrame = 0;
+    }
+  }
+
   document.addEventListener("pointermove", (event) => {
-    cursorAura.style.left = `${event.clientX}px`;
-    cursorAura.style.top = `${event.clientY}px`;
+    if (cursorX === -100) {
+      cursorX = event.clientX;
+      cursorY = event.clientY;
+    }
+    targetCursorX = event.clientX;
+    targetCursorY = event.clientY;
+    if (!cursorAnimationFrame) cursorAnimationFrame = requestAnimationFrame(renderCursorPosition);
     cursorAura.classList.add("is-visible");
     const target = event.target.closest?.("a, button, input, textarea, select");
     cursorAura.classList.toggle("is-action", Boolean(target) && !target.matches("input, textarea, select"));
