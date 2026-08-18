@@ -1,7 +1,7 @@
 const translations = {
   en: {
     skip: "Skip to content", menu: "Open menu", navAbout: "About", navExperience: "Experience", navProjects: "Projects", navSkills: "Skills", navContact: "Contact", downloadCv: "Download CV",
-    heroEyebrow: "Events & client coordination · Spain / UK", heroTitle: "Plans with purpose.<br><em>Moments with soul.</em>", heroIntro: "I coordinate people, logistics and creative details to turn each brief into a thoughtful, effortless experience.", viewWork: "Explore my work", contactMe: "Let's talk", present: "Present", factOneSub: "Freelance events", factTwo: "Spain + UK", factTwoSub: "International experience", factThreeSub: "Three working languages", available: "Open to opportunities across the UK and internationally", discover: "Discover",
+    heroEyebrow: "Events & client coordination · Spain / UK", heroTitle: "<span class=\"hero-title-line\">Plans with purpose.</span><span class=\"hero-title-line\"><em>Moments with soul.</em></span>", heroIntro: "I coordinate people, logistics and creative details to turn each brief into a thoughtful, effortless experience.", viewWork: "Explore my work", contactMe: "Let's talk", present: "Present", factOneSub: "Freelance events", factTwo: "Spain + UK", factTwoSub: "International experience", factThreeSub: "Three working languages", available: "Open to opportunities across the UK and internationally", discover: "Discover",
     ribbon1: "Event coordination", ribbon2: "Client experience", ribbon3: "Travel & logistics", ribbon4: "Creative styling",
     aboutEyebrow: "01 · About me", aboutTitle: "Structure in every detail.<br><em>Warmth in every interaction.</em>", aboutLead: "I am a highly organised events and client support professional, experienced in shaping personalised experiences from the first conversation to final delivery.", aboutBody: "My background spans freelance event coordination, international travel proposals, hospitality and client-facing operations. Living and working in London strengthened my independence, cultural awareness and ability to keep many moving parts calm, clear and on schedule.", role: "Client Support & Events Coordinator", rightToWork: "UK Settled Status · Full right to work",
     experienceEyebrow: "02 · Experience", experienceTitle: "Experience that moves<br><em>between people and plans.</em>", experienceIntro: "A career shaped by coordination, service, adaptability and trust.", spain: "Spain", freelanceLabel: "Freelance · Self-employed", freelanceRole: "Event & Client Coordinator", freelanceBody: "Coordinate private events and personalised client experiences from concept to execution, including travel, suppliers, styling, budgets and timelines.", freelanceSkill1: "Tailored proposals based on preferences and budget", freelanceSkill2: "Supplier, material and service coordination", freelanceSkill3: "Venue setup, decoration and event styling", freelanceSkill4: "Invitations and personalised visual materials", teachingRole: "English Teaching Assistant", teachingBody: "Supported educational and extracurricular activities in a multicultural environment, helping children communicate and learn confidently in groups.", internationalLabel: "International experience", familyRole: "Private Family Support Assistant", familyBody: "Managed busy schedules, appointments, activities and holiday planning independently, with discretion, flexibility and a high level of responsibility.", hospitalityLabel: "Restaurants & events", hospitalityRole: "Hospitality Assistant", hospitalityBody: "Delivered attentive customer service in fast-paced hospitality and event environments, collaborating effectively under pressure and supporting international guests.",
@@ -15,7 +15,7 @@ const translations = {
   },
   es: {
     skip: "Saltar al contenido", menu: "Abrir menú", navAbout: "Sobre mí", navExperience: "Experiencia", navProjects: "Proyectos", navSkills: "Competencias", navContact: "Contacto", downloadCv: "Descargar CV",
-    heroEyebrow: "Coordinación de eventos y clientes · España / Reino Unido", heroTitle: "Planes con intención.<br><em>Momentos con alma.</em>", heroIntro: "Coordino personas, logística y detalles creativos para convertir cada briefing en una experiencia cuidada y fluida.", viewWork: "Descubre mi trabajo", contactMe: "Hablemos", present: "Actualidad", factOneSub: "Eventos freelance", factTwo: "España + UK", factTwoSub: "Experiencia internacional", factThreeSub: "Tres idiomas de trabajo", available: "Abierta a oportunidades en Reino Unido y a nivel internacional", discover: "Descubrir",
+    heroEyebrow: "Coordinación de eventos y clientes · España / Reino Unido", heroTitle: "<span class=\"hero-title-line\">Planes con intención.</span><span class=\"hero-title-line\"><em>Momentos con alma.</em></span>", heroIntro: "Coordino personas, logística y detalles creativos para convertir cada briefing en una experiencia cuidada y fluida.", viewWork: "Descubre mi trabajo", contactMe: "Hablemos", present: "Actualidad", factOneSub: "Eventos freelance", factTwo: "España + UK", factTwoSub: "Experiencia internacional", factThreeSub: "Tres idiomas de trabajo", available: "Abierta a oportunidades en Reino Unido y a nivel internacional", discover: "Descubrir",
     ribbon1: "Coordinación de eventos", ribbon2: "Experiencia de cliente", ribbon3: "Viajes y logística", ribbon4: "Estilismo creativo",
     aboutEyebrow: "01 · Sobre mí", aboutTitle: "Estructura en cada detalle.<br><em>Cercanía en cada trato.</em>", aboutLead: "Soy una profesional muy organizada de eventos y atención al cliente, con experiencia creando propuestas personalizadas desde la primera conversación hasta la entrega final.", aboutBody: "Mi trayectoria combina coordinación freelance de eventos, propuestas de viajes internacionales, hospitality y operaciones de cara al cliente. Vivir y trabajar en Londres reforzó mi autonomía, sensibilidad cultural y capacidad para mantener en orden, con calma y a tiempo, muchas piezas a la vez.", role: "Coordinadora de Eventos y Atención al Cliente", rightToWork: "UK Settled Status · Permiso completo de trabajo",
     experienceEyebrow: "02 · Experiencia", experienceTitle: "Experiencia que conecta<br><em>personas y planificación.</em>", experienceIntro: "Una trayectoria construida sobre coordinación, servicio, adaptabilidad y confianza.", spain: "España", freelanceLabel: "Freelance · Autónoma", freelanceRole: "Coordinadora de Eventos y Clientes", freelanceBody: "Coordino eventos privados y experiencias personalizadas de principio a fin, incluyendo viajes, proveedores, estilismo, presupuestos y calendarios.", freelanceSkill1: "Propuestas a medida según preferencias y presupuesto", freelanceSkill2: "Coordinación de proveedores, materiales y servicios", freelanceSkill3: "Montaje de espacios, decoración y estilismo", freelanceSkill4: "Invitaciones y materiales visuales personalizados", teachingRole: "Asistente de Enseñanza de Inglés", teachingBody: "Apoyo en actividades educativas y extraescolares dentro de un entorno multicultural, ayudando a los niños a comunicarse y aprender con confianza en grupo.", internationalLabel: "Experiencia internacional", familyRole: "Asistente de Apoyo Familiar Privado", familyBody: "Gestión autónoma de agendas, citas, actividades y planificación de vacaciones con discreción, flexibilidad y un alto nivel de responsabilidad.", hospitalityLabel: "Restaurantes y eventos", hospitalityRole: "Asistente de Hospitality", hospitalityBody: "Atención al cliente en entornos dinámicos de restauración y eventos, colaborando con eficacia bajo presión y dando soporte a clientes internacionales.",
@@ -152,6 +152,53 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
     entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); } });
   }, { threshold: 0.12 });
   revealElements.forEach((element) => revealObserver.observe(element));
+}
+
+// The hero is already in the initial viewport, so its cinematic entrance should
+// never depend on clip-path intersection calculations that vary by browser.
+requestAnimationFrame(() => {
+  document.querySelectorAll(".hero .reveal").forEach((element) => element.classList.add("is-visible"));
+});
+
+const heroSection = document.querySelector(".hero");
+const finePointer = window.matchMedia("(pointer: fine)").matches;
+let heroAnimationFrame = 0;
+
+function resetHeroDepth() {
+  heroSection.style.setProperty("--pointer-x", "50%");
+  heroSection.style.setProperty("--pointer-y", "45%");
+  heroSection.style.setProperty("--tilt-x", "0deg");
+  heroSection.style.setProperty("--tilt-y", "0deg");
+  heroSection.style.setProperty("--shift-x", "0px");
+  heroSection.style.setProperty("--shift-y", "0px");
+  heroSection.style.setProperty("--shift-x-inverse", "0px");
+  heroSection.style.setProperty("--shift-y-inverse", "0px");
+  heroSection.style.setProperty("--shadow-x", "0px");
+  heroSection.style.setProperty("--shadow-y", "8px");
+}
+
+if (!reduceMotion && finePointer) {
+  heroSection.addEventListener("pointermove", (event) => {
+    const bounds = heroSection.getBoundingClientRect();
+    const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
+    const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
+    cancelAnimationFrame(heroAnimationFrame);
+    heroAnimationFrame = requestAnimationFrame(() => {
+      const horizontal = x - .5;
+      const vertical = y - .5;
+      heroSection.style.setProperty("--pointer-x", `${x * 100}%`);
+      heroSection.style.setProperty("--pointer-y", `${y * 100}%`);
+      heroSection.style.setProperty("--tilt-x", `${vertical * -5}deg`);
+      heroSection.style.setProperty("--tilt-y", `${horizontal * 7}deg`);
+      heroSection.style.setProperty("--shift-x", `${horizontal * 18}px`);
+      heroSection.style.setProperty("--shift-y", `${vertical * 14}px`);
+      heroSection.style.setProperty("--shift-x-inverse", `${horizontal * -14}px`);
+      heroSection.style.setProperty("--shift-y-inverse", `${vertical * -10}px`);
+      heroSection.style.setProperty("--shadow-x", `${horizontal * 7}px`);
+      heroSection.style.setProperty("--shadow-y", `${8 + vertical * 6}px`);
+    });
+  });
+  heroSection.addEventListener("pointerleave", resetHeroDepth);
 }
 
 const sectionLinks = [...document.querySelectorAll(".nav-links a")];
