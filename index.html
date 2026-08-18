@@ -15,8 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260818">
-  <script src="js/main.js?v=20260818" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=20260818-2">
+  <script src="js/main.js?v=20260818-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="skip">Skip to content</a>
@@ -59,7 +59,14 @@
       <a class="scroll-cue" href="#about"><span data-i18n="discover">Discover</span><span aria-hidden="true">↓</span></a>
     </section>
 
-    <div class="service-ribbon" aria-label="Areas of expertise"><div class="service-track"><span data-i18n="ribbon1">Event coordination</span><i>✦</i><span data-i18n="ribbon2">Client experience</span><i>✦</i><span data-i18n="ribbon3">Travel & logistics</span><i>✦</i><span data-i18n="ribbon4">Creative styling</span><i>✦</i><span data-i18n="ribbon1" aria-hidden="true">Event coordination</span><i aria-hidden="true">✦</i><span data-i18n="ribbon2" aria-hidden="true">Client experience</span><i aria-hidden="true">✦</i><span data-i18n="ribbon3" aria-hidden="true">Travel & logistics</span><i aria-hidden="true">✦</i><span data-i18n="ribbon4" aria-hidden="true">Creative styling</span><i aria-hidden="true">✦</i></div></div>
+    <div class="service-band" aria-label="Areas of expertise">
+      <div class="container service-list">
+        <div class="service-item"><span aria-hidden="true">01</span><p data-i18n="ribbon1">Event coordination</p></div>
+        <div class="service-item"><span aria-hidden="true">02</span><p data-i18n="ribbon2">Client experience</p></div>
+        <div class="service-item"><span aria-hidden="true">03</span><p data-i18n="ribbon3">Travel & logistics</p></div>
+        <div class="service-item"><span aria-hidden="true">04</span><p data-i18n="ribbon4">Creative styling</p></div>
+      </div>
+    </div>
 
     <section class="section about" id="about">
       <div class="container two-column">
@@ -131,7 +138,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">CG</span><span class="brand-name">Carolina Granda</span></a><p data-i18n="role">Client Support & Events Coordinator</p></div><p>© <span id="current-year"></span> Carolina Granda. <span data-i18n="rights">All rights reserved.</span></p><a class="back-to-top" href="#top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">CG</span><span class="brand-name">Carolina Granda</span></a><p data-i18n="role">Client Support & Events Coordinator</p></div><p>© <span id="current-year"></span> Carolina Granda. <span data-i18n="rights">All rights reserved.</span></p><a class="back-to-top" href="#home"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></footer>
 
   <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title"><div class="modal-inner"><button class="modal-close" type="button" aria-label="Close project details">×</button><div class="modal-media"><img id="modal-image" src="assets/images/project-portimao.jpg" alt="" width="720" height="820"></div><div class="modal-copy"><p class="eyebrow" id="modal-type"></p><h2 id="modal-title"></h2><p id="modal-description"></p><dl class="project-facts"><div><dt data-i18n="modalObjective">The brief</dt><dd id="modal-objective"></dd></div><div><dt data-i18n="modalRole">My contribution</dt><dd id="modal-role"></dd></div><div><dt data-i18n="modalScope">Scope</dt><dd id="modal-scope"></dd></div><div><dt data-i18n="modalOutcome">Deliverable</dt><dd id="modal-outcome"></dd></div></dl><a id="modal-link" class="button button-primary" href="#" target="_blank" rel="noopener noreferrer" data-i18n="viewFullProject">View full project</a></div></div></dialog>
 </body>

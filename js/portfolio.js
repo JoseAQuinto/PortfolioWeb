@@ -199,6 +199,11 @@ contactForm.addEventListener("submit", (event) => {
 });
 contactForm.querySelectorAll("input, textarea").forEach((field) => field.addEventListener("input", () => { if (field.classList.contains("is-invalid")) showFieldError(field, ""); }));
 
+document.querySelector(".back-to-top").addEventListener("click", (event) => {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+});
+
 let storedLanguage = "en";
 try { storedLanguage = localStorage.getItem("portfolio-language") || "en"; } catch (_) { /* No-op. */ }
 setLanguage(storedLanguage);
