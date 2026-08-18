@@ -293,25 +293,25 @@ h3 { line-height: 1.25; }
   html.cursor-enhanced .cursor-aura::before { content: "CG"; top: -1px; left: 0; color: var(--wine); background: transparent; font-family: var(--serif); font-size: .68rem; font-style: italic; line-height: 1; transform: rotate(-7deg); }
   html.cursor-enhanced .cursor-aura::after { top: 12px; left: 4px; width: 20px; height: 1px; background: linear-gradient(90deg, var(--coral), transparent); transform: rotate(-7deg); transform-origin: left center; }
   html.cursor-enhanced .cursor-aura.is-visible { opacity: 1; }
-  html.cursor-enhanced .cursor-aura.is-action:not(.is-project) { width: 54px; height: 20px; transform: translateY(-50%) rotate(-32deg); transform-origin: 0 50%; }
-  html.cursor-enhanced .cursor-aura.is-action:not(.is-project)::before { content: ""; top: 4px; left: 14px; width: 12px; height: 12px; border: 1px solid rgba(92,58,38,.22); border-radius: 1px 3px 3px 1px; background: linear-gradient(180deg, #f1d7b0, #b98154 48%, #e1bd8a 52%, #9a6542); box-shadow: inset 0 1px rgba(255,255,255,.55), 1px 1px 3px rgba(52,31,25,.18); transform: none; animation: brush-ferrule-in .28s cubic-bezier(.22,1,.36,1) both; }
-  html.cursor-enhanced .cursor-aura.is-action:not(.is-project)::after { top: 5px; left: 0; width: 16px; height: 10px; background: repeating-linear-gradient(180deg, #76203f 0 1px, #a93655 1px 2px, #d86543 2px 3px); clip-path: polygon(0 50%, 28% 0, 100% 0, 100% 100%, 28% 100%); filter: drop-shadow(0 1px 1px rgba(70,29,42,.24)); transform: none; transform-origin: left center; animation: brush-bristle-flex .72s ease-in-out infinite alternate; }
+  html.cursor-enhanced .cursor-aura.is-action:not(.is-project) { width: 68px; height: 20px; transform: translateY(-50%) rotate(-34deg); transform-origin: 0 50%; }
+  html.cursor-enhanced .cursor-aura.is-action:not(.is-project)::before { content: ""; top: 4px; left: 20px; width: 14px; height: 12px; border: 1px solid rgba(67,61,57,.24); border-radius: 1px 3px 3px 1px; background: linear-gradient(180deg, #fbf8f2, #aaa39c 30%, #eee7de 52%, #817b76 78%, #d5cec6); box-shadow: inset 0 1px rgba(255,255,255,.75), 1px 1px 3px rgba(52,31,25,.2); transform: none; animation: brush-ferrule-in .28s cubic-bezier(.22,1,.36,1) both; }
+  html.cursor-enhanced .cursor-aura.is-action:not(.is-project)::after { top: 4px; left: 0; width: 22px; height: 12px; background: linear-gradient(90deg, #4b1428 0%, #852744 26%, #c25755 58%, #8a6349 82%, #5c4234 100%); clip-path: polygon(0 50%, 38% 5%, 100% 18%, 100% 82%, 38% 95%); filter: drop-shadow(0 1px 1px rgba(57,27,35,.3)); transform: none; transform-origin: left center; animation: brush-bristle-flex .78s ease-in-out infinite alternate; }
   html.cursor-enhanced .cursor-aura.is-project { width: 64px; height: 64px; border-color: var(--wine); border-radius: 50%; background: var(--wine); color: #fff; transform: translate(-50%, -50%); }
   html.cursor-enhanced .cursor-aura.is-project::before, html.cursor-enhanced .cursor-aura.is-project::after { opacity: 0; transform: scale(.2); }
   html.cursor-enhanced .cursor-aura.is-hidden { opacity: 0; }
   html.cursor-enhanced .cursor-aura.is-pressed:not(.is-action) { transform: translate(13px, 10px) scale(.86); }
-  html.cursor-enhanced .cursor-aura.is-action:not(.is-project).is-pressed { transform: translateY(-50%) rotate(-32deg) scale(.94); }
-  html.cursor-enhanced .cursor-aura.is-action:not(.is-project).is-pressed::after { animation: none; transform: scaleX(.78) skewY(5deg); }
+  html.cursor-enhanced .cursor-aura.is-action:not(.is-project).is-pressed { transform: translateY(-50%) rotate(-34deg) scale(.95); }
+  html.cursor-enhanced .cursor-aura.is-action:not(.is-project).is-pressed::after { animation: none; transform: scaleX(.82) skewY(4deg); }
   html.cursor-enhanced .cursor-aura.is-project.is-pressed { transform: translate(-50%, -50%) scale(.9); }
   .cursor-aura span { width: 100%; opacity: 0; font-size: .52rem; font-weight: 600; letter-spacing: .1em; text-align: center; text-transform: uppercase; transition: opacity .16s ease; }
-  .cursor-aura.is-action:not(.is-project) span { position: absolute; top: 6px; left: 24px; width: 30px; height: 8px; border-radius: 1px 8px 8px 1px; opacity: 1; background: linear-gradient(180deg, #6d3044, #351e28 58%, #7f3a51); box-shadow: inset 0 1px rgba(255,255,255,.18), 1px 2px 4px rgba(52,31,39,.2); font-size: 0; animation: brush-handle-in .3s cubic-bezier(.22,1,.36,1) both; }
+  .cursor-aura.is-action:not(.is-project) span { position: absolute; top: 5px; left: 32px; width: 36px; height: 10px; border-radius: 1px 12px 12px 1px; opacity: 1; background: linear-gradient(180deg, #9a4e5f, #4b2633 45%, #291820 68%, #763b4d); box-shadow: inset 0 1px rgba(255,255,255,.2), 1px 2px 5px rgba(52,31,39,.22); clip-path: polygon(0 12%, 100% 26%, 100% 74%, 0 88%); font-size: 0; animation: brush-handle-in .3s cubic-bezier(.22,1,.36,1) both; }
   .cursor-aura.is-project span { position: static; width: 100%; height: auto; border-radius: 0; opacity: 1; background: none; box-shadow: none; font-size: .52rem; animation: none; }
 }
 
 @keyframes palette-arrive { from { opacity: 0; transform: translateY(8px) scale(.75); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes brush-handle-in { from { opacity: 0; transform: translateX(-6px) scaleX(.8); } to { opacity: 1; transform: translateX(0) scaleX(1); } }
 @keyframes brush-ferrule-in { from { opacity: 0; transform: translateX(-3px) scaleX(.75); } to { opacity: 1; transform: translateX(0) scaleX(1); } }
-@keyframes brush-bristle-flex { from { transform: scaleX(.94) skewY(-2deg); } to { transform: scaleX(1) skewY(2deg); } }
+@keyframes brush-bristle-flex { from { transform: scaleX(.97) skewY(-1deg); } to { transform: scaleX(1) skewY(1deg); } }
 
 @media (max-width: 1050px) {
   :root { --container: min(100% - 36px, 900px); }
