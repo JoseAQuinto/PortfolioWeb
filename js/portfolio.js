@@ -252,8 +252,8 @@ if (useCursorAura) {
     targetCursorX = event.clientX;
     targetCursorY = event.clientY;
     const target = event.target.closest?.("a, button, input, textarea, select");
-    const isAction = Boolean(target) && !target.matches("input, textarea, select");
-    if (isAction) {
+    const isProject = Boolean(target?.classList.contains("project-open"));
+    if (isProject) {
       if (cursorAnimationFrame) cancelAnimationFrame(cursorAnimationFrame);
       cursorAnimationFrame = 0;
       cursorX = targetCursorX;
@@ -264,9 +264,9 @@ if (useCursorAura) {
       cursorAnimationFrame = requestAnimationFrame(renderCursorPosition);
     }
     cursorAura.classList.add("is-visible");
-    cursorAura.classList.toggle("is-action", isAction);
-    cursorAura.classList.toggle("is-project", Boolean(target?.classList.contains("project-open")));
-    cursorAura.classList.toggle("is-hidden", Boolean(target?.matches("input, textarea, select")));
+    cursorAura.classList.toggle("is-action", isProject);
+    cursorAura.classList.toggle("is-project", isProject);
+    cursorAura.classList.toggle("is-hidden", Boolean(target) && !isProject);
   }, { passive: true });
   document.addEventListener("pointerdown", () => cursorAura.classList.add("is-pressed"));
   document.addEventListener("pointerup", () => cursorAura.classList.remove("is-pressed"));
