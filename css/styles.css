@@ -244,6 +244,9 @@ h3 { line-height: 1.25; }
 .field-error { min-height: 18px; padding-top: 4px; color: #ffbbc6; font-size: .66rem; }
 .contact-form .button { justify-self: start; }
 .form-status { grid-column: 1 / -1; margin: 0; color: #efbecb; font-size: .76rem; }
+.form-status.is-success { color: #a9dfc9; }
+.form-status.is-error { color: #ffbbc6; }
+.contact-form .button:disabled { cursor: wait; opacity: .62; }
 .honeypot { display: none; }
 
 .site-footer { padding: 44px 0; background: #102e29; color: rgba(255,255,255,.64); }

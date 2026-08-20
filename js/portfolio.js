@@ -10,7 +10,7 @@ const translations = {
     skillsEyebrow: "05 · Capabilities", skillsTitle: "The practical skills behind<br><em>a seamless experience.</em>", skillsPlan: "Planning & operations", skillsPeople: "Client & guest experience", skillsCreative: "Creative & digital", skillEventCoordination: "Event coordination", skillTravel: "Travel & logistics", skillVendor: "Vendor coordination", skillBudgets: "Budgets", skillTimelines: "Timelines", skillDiary: "Diary management", skillClient: "Client communication", skillGuest: "Guest support", skillHospitality: "Hospitality", skillCustomer: "Customer service", skillProblem: "Problem solving", skillIntercultural: "Intercultural communication", skillCanva: "Canva", skillIllustrator: "Adobe Illustrator", skillInDesign: "Adobe InDesign", skillPhotoshop: "Adobe Photoshop", skillSocial: "Social media", skillGoogle: "Google Workspace",
     languagesEyebrow: "06 · Languages", languagesTitle: "Clear communication,<br><em>across cultures.</em>", languagesBody: "International experience has made English a natural working language, alongside native Spanish and Valencian/Catalan.", english: "English", englishDetail: "Fluent · Professional working proficiency", spanishLanguage: "Spanish", native: "Native language", nativeShort: "Native", valencian: "Valencian / Catalan",
     valuesEyebrow: "How I work", value1: "Detail-led", value2: "Calm under pressure", value3: "Client-focused", value4: "Resourceful", value5: "Culturally aware", value6: "Reliable",
-    contactEyebrow: "07 · Contact", contactTitle: "Have a role, a brief<br><em>or an idea?</em>", contactIntro: "I am open to opportunities in event coordination, client support, hospitality and international operations.", email: "Email", ukPhone: "UK phone", spainPhone: "Spain phone", location: "Based in", formName: "Name", formNamePlaceholder: "Your name", formEmail: "Email", formCompany: "Company", formCompanyPlaceholder: "Company or organisation", formMessage: "Message", formMessagePlaceholder: "Tell me about the role or project", sendMessage: "Send message", formRequired: "Please complete this field.", formEmailInvalid: "Enter a valid email address.", formOpeningEmail: "Your email app is opening. If it does not, write to carolinaceeg@gmail.com.",
+    contactEyebrow: "07 · Contact", contactTitle: "Have a role, a brief<br><em>or an idea?</em>", contactIntro: "I am open to opportunities in event coordination, client support, hospitality and international operations.", email: "Email", ukPhone: "UK phone", spainPhone: "Spain phone", location: "Based in", formName: "Name", formNamePlaceholder: "Your name", formEmail: "Email", formCompany: "Company", formCompanyPlaceholder: "Company or organisation", formMessage: "Message", formMessagePlaceholder: "Tell me about the role or project", sendMessage: "Send message", formSending: "Sending…", formSuccess: "Message sent successfully. Thank you!", formError: "The message could not be sent. Please try again in a moment.", formRequired: "Please complete this field.", formEmailInvalid: "Enter a valid email address.",
     rights: "All rights reserved.", backTop: "Back to top", modalFingerprint: "Creative fingerprint", modalPalette: "Palette", modalDirection: "Visual direction", modalDecision: "Design decision", modalObjective: "The brief", modalRole: "My contribution", modalScope: "Scope", modalOutcome: "Deliverable", viewFullProject: "View full project", closeModal: "Close project details", cursorView: "View"
   },
   es: {
@@ -24,7 +24,7 @@ const translations = {
     skillsEyebrow: "05 · Competencias", skillsTitle: "Las habilidades prácticas detrás de<br><em>una experiencia fluida.</em>", skillsPlan: "Planificación y operaciones", skillsPeople: "Experiencia de cliente e invitado", skillsCreative: "Creatividad y entorno digital", skillEventCoordination: "Coordinación de eventos", skillTravel: "Viajes y logística", skillVendor: "Coordinación de proveedores", skillBudgets: "Presupuestos", skillTimelines: "Calendarios", skillDiary: "Gestión de agendas", skillClient: "Comunicación con clientes", skillGuest: "Atención a invitados", skillHospitality: "Hospitality", skillCustomer: "Atención al cliente", skillProblem: "Resolución de problemas", skillIntercultural: "Comunicación intercultural", skillCanva: "Canva", skillIllustrator: "Adobe Illustrator", skillInDesign: "Adobe InDesign", skillPhotoshop: "Adobe Photoshop", skillSocial: "Redes sociales", skillGoogle: "Google Workspace",
     languagesEyebrow: "06 · Idiomas", languagesTitle: "Comunicación clara,<br><em>entre culturas.</em>", languagesBody: "La experiencia internacional ha convertido el inglés en un idioma de trabajo natural, junto con el español y el valenciano/catalán como lenguas nativas.", english: "Inglés", englishDetail: "Fluido · Competencia profesional", spanishLanguage: "Español", native: "Lengua materna", nativeShort: "Nativo", valencian: "Valenciano / Catalán",
     valuesEyebrow: "Cómo trabajo", value1: "Atenta al detalle", value2: "Serena bajo presión", value3: "Centrada en el cliente", value4: "Resolutiva", value5: "Con sensibilidad cultural", value6: "Fiable",
-    contactEyebrow: "07 · Contacto", contactTitle: "¿Tienes un puesto, un briefing<br><em>o una idea?</em>", contactIntro: "Estoy abierta a oportunidades en coordinación de eventos, atención al cliente, hospitality y operaciones internacionales.", email: "Correo", ukPhone: "Teléfono UK", spainPhone: "Teléfono España", location: "Ubicación", formName: "Nombre", formNamePlaceholder: "Tu nombre", formEmail: "Correo", formCompany: "Empresa", formCompanyPlaceholder: "Empresa u organización", formMessage: "Mensaje", formMessagePlaceholder: "Cuéntame sobre el puesto o proyecto", sendMessage: "Enviar mensaje", formRequired: "Completa este campo.", formEmailInvalid: "Introduce un correo válido.", formOpeningEmail: "Se está abriendo tu aplicación de correo. Si no lo hace, escribe a carolinaceeg@gmail.com.",
+    contactEyebrow: "07 · Contacto", contactTitle: "¿Tienes un puesto, un briefing<br><em>o una idea?</em>", contactIntro: "Estoy abierta a oportunidades en coordinación de eventos, atención al cliente, hospitality y operaciones internacionales.", email: "Correo", ukPhone: "Teléfono UK", spainPhone: "Teléfono España", location: "Ubicación", formName: "Nombre", formNamePlaceholder: "Tu nombre", formEmail: "Correo", formCompany: "Empresa", formCompanyPlaceholder: "Empresa u organización", formMessage: "Mensaje", formMessagePlaceholder: "Cuéntame sobre el puesto o proyecto", sendMessage: "Enviar mensaje", formSending: "Enviando…", formSuccess: "Mensaje enviado correctamente. ¡Gracias!", formError: "No se pudo enviar el mensaje. Inténtalo de nuevo en unos instantes.", formRequired: "Completa este campo.", formEmailInvalid: "Introduce un correo válido.",
     rights: "Todos los derechos reservados.", backTop: "Volver arriba", modalFingerprint: "Huella creativa", modalPalette: "Paleta", modalDirection: "Dirección visual", modalDecision: "Decisión de diseño", modalObjective: "El encargo", modalRole: "Mi aportación", modalScope: "Alcance", modalOutcome: "Entregable", viewFullProject: "Ver proyecto completo", closeModal: "Cerrar detalles del proyecto", cursorView: "Ver"
   }
 };
@@ -316,7 +316,29 @@ function showFieldError(field, message) {
   const error = field.parentElement.querySelector(".field-error");
   if (error) error.textContent = message;
 }
-contactForm.addEventListener("submit", (event) => {
+
+const contactSubmitButton = contactForm.querySelector('button[type="submit"]');
+const contactSubmitLabel = contactSubmitButton.querySelector('[data-i18n="sendMessage"]');
+const contactFormStatus = contactForm.querySelector(".form-status");
+let contactFormSubmitting = false;
+
+function setContactFormStatus(message = "", type = "") {
+  contactFormStatus.textContent = message;
+  contactFormStatus.classList.toggle("is-success", type === "success");
+  contactFormStatus.classList.toggle("is-error", type === "error");
+}
+
+function setContactFormLoading(loading) {
+  contactFormSubmitting = loading;
+  contactForm.setAttribute("aria-busy", String(loading));
+  contactSubmitButton.disabled = loading;
+  contactSubmitLabel.textContent = translations[currentLanguage][loading ? "formSending" : "sendMessage"];
+}
+
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (contactFormSubmitting) return;
+
   let valid = true;
   contactForm.querySelectorAll("[required]").forEach((field) => {
     let message = "";
@@ -325,14 +347,35 @@ contactForm.addEventListener("submit", (event) => {
     showFieldError(field, message);
     if (message) valid = false;
   });
-  if (!valid) { event.preventDefault(); contactForm.querySelector(".is-invalid")?.focus(); return; }
-  if (!window.location.hostname.endsWith("netlify.app")) {
-    event.preventDefault();
-    const data = new FormData(contactForm);
-    const subject = encodeURIComponent(`Portfolio contact — ${data.get("name")}${data.get("company") ? ` · ${data.get("company")}` : ""}`);
-    const body = encodeURIComponent(`${data.get("message")}\n\nFrom: ${data.get("name")} (${data.get("email")})`);
-    contactForm.querySelector(".form-status").textContent = translations[currentLanguage].formOpeningEmail;
-    window.location.href = `mailto:carolinaceeg@gmail.com?subject=${subject}&body=${body}`;
+  if (!valid) {
+    setContactFormStatus();
+    contactForm.querySelector(".is-invalid")?.focus();
+    return;
+  }
+
+  setContactFormLoading(true);
+  setContactFormStatus(translations[currentLanguage].formSending);
+
+  try {
+    const formData = new FormData(contactForm);
+    formData.set("form-name", contactForm.getAttribute("name"));
+    const payload = new URLSearchParams();
+    formData.forEach((value, key) => payload.append(key, String(value)));
+    const response = await fetch(contactForm.getAttribute("action") || "/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: payload.toString()
+    });
+    if (!response.ok) throw new Error(`Netlify Forms returned ${response.status}`);
+
+    contactForm.reset();
+    contactForm.querySelectorAll(".is-invalid").forEach((field) => showFieldError(field, ""));
+    setContactFormStatus(translations[currentLanguage].formSuccess, "success");
+  } catch (error) {
+    console.error("Contact form submission failed", error);
+    setContactFormStatus(translations[currentLanguage].formError, "error");
+  } finally {
+    setContactFormLoading(false);
   }
 });
 contactForm.querySelectorAll("input, textarea").forEach((field) => field.addEventListener("input", () => { if (field.classList.contains("is-invalid")) showFieldError(field, ""); }));

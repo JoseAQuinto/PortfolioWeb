@@ -43,7 +43,7 @@ Los textos bilingües, datos de proyectos e interacciones están en `js/portfoli
 
 ## Formulario
 
-En un dominio `*.netlify.app`, el formulario utiliza Netlify Forms. En local, GitHub Pages u otro alojamiento estático abre el cliente de correo con el mensaje preparado para `carolinaceeg@gmail.com`.
+El formulario utiliza Netlify Forms mediante una petición `POST` asíncrona codificada como `application/x-www-form-urlencoded`. El usuario permanece en la página y recibe estados de envío, confirmación o error sin redirecciones.
 
 ## Publicación
 
